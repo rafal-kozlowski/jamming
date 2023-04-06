@@ -1,7 +1,7 @@
 import React from 'react';
 import './Track.css';
 
-export class Track extends React.Component {
+class Track extends React.Component {
     // CHECK IF THAT KIND OF ACTION WOULD WORK PROPERLY
     // renderAction() {
     //     let action;
@@ -29,8 +29,10 @@ export class Track extends React.Component {
                     <h3>Track name goes here</h3>
                     <p>Track artist | Track album</p>
                 </div>
-                {this.renderAction()};
+                {this.renderAction()}
             </div>
         )
     }
 }
+
+export default Track;
