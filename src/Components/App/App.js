@@ -7,11 +7,19 @@ class App extends React.Component {
   constructor(props) { 
     super(props);
     this.state = { 
-      searchResults: [{name: 'name1', artist: 'artist1', album: 'album1', id: 1}, 
+      searchResults: 
+      [{name: 'name1', artist: 'artist1', album: 'album1', id: 1}, 
       {name: 'name2', artist: 'artist2', album: 'album2', id: 2},
       {name: 'name3', artist: 'artist3', album: 'album3', id: 3},
       {name: 'name4', artist: 'artist4', album: 'album4', id: 4},
-      {name: 'name5', artist: 'artist5', album: 'album5', id: 5}] 
+      {name: 'name5', artist: 'artist5', album: 'album5', id: 5}],
+      playlistName: "Rafal's playlist",
+      playlistTracks: 
+      [{name: 'Rafal1', artist: 'Rafalartist1', album: 'Rafalalbum1', id: 1}, 
+      {name: 'Rafal2', artist: 'Rafalartist2', album: 'Rafalalbum2', id: 2},
+      {name: 'Rafal3', artist: 'Rafalartist3', album: 'Rafalalbum3', id: 3},
+      {name: 'Rafale4', artist: 'Rafalartist4', album: 'Rafalalbum4', id: 4},
+      {name: 'Rafal5', artist: 'Rafalartist5', album: 'Rafalalbum5', id: 5}], 
     };
   }
 
