@@ -15,11 +15,11 @@ class App extends React.Component {
       {name: 'name5', artist: 'artist5', album: 'album5', id: 5}],
       playlistName: "Rafal's playlist",
       playlistTracks: 
-      [{name: 'Rafal1', artist: 'Rafalartist1', album: 'Rafalalbum1', id: 1}, 
-      {name: 'Rafal2', artist: 'Rafalartist2', album: 'Rafalalbum2', id: 2},
-      {name: 'Rafal3', artist: 'Rafalartist3', album: 'Rafalalbum3', id: 3},
-      {name: 'Rafale4', artist: 'Rafalartist4', album: 'Rafalalbum4', id: 4},
-      {name: 'Rafal5', artist: 'Rafalartist5', album: 'Rafalalbum5', id: 5}], 
+      [{name: 'Rafal1', artist: 'Rafalartist1', album: 'Rafalalbum1', id: 11}, 
+      {name: 'Rafal2', artist: 'Rafalartist2', album: 'Rafalalbum2', id: 22},
+      {name: 'Rafal3', artist: 'Rafalartist3', album: 'Rafalalbum3', id: 33},
+      {name: 'Rafale4', artist: 'Rafalartist4', album: 'Rafalalbum4', id: 44},
+      {name: 'Rafal5', artist: 'Rafalartist5', album: 'Rafalalbum5', id: 55}], 
     };
   }
 
@@ -34,7 +34,7 @@ class App extends React.Component {
           <SearchBar />
           <div className="App-playlist">
             {<SearchResults searchResults = {this.state.searchResults} />}
-            {<Playlist />}
+            {<Playlist playlistName = {this.state.playlistName} playlistTracks = {this.state.playlistTracks}/>}
           </div>
         </div>
       </div>
